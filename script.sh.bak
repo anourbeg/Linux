@@ -19,33 +19,23 @@ do
  echo "Mot de passe" $i = $mdp
 sudo echo User $i: $mdp>> MDP
 sudo useradd -m -p $mdp $i
-
 done
 
-#Placer les users dans les groupes
+#Place les users dans les groupes
 sudo usermod -g Recherches -G ADMRECH ROD
-echo ROD
-sudo usermod -g Recherches SAF
-echo SAF
-sudo usermod -g Recherches ALC
-echo ALC
-sudo usermod -g Recherches JEL
-echo JEL
-sudo usermod -g Recherches SOA
-echo SOA
 sudo usermod -g Dev -G ADMDEV NAD
-echo NAD
-sudo usermod -g Dev LIT
-echo LIT
-sudo usermod -g Dev KET
-echo KET
-sudo usermod -g Dev JAD
-echo JAD
 sudo usermod -g ING -G ADMING HES
-echo HES
-sudo usermod -g ING ROM
-echo ROM
-sudo usermod -g ING ALD
-echo ALD
 sudo usermod -aG ADMRECH,ADMDEV,ADMING BIP
-echo BIP
+
+for x in SAF ALC JEL SOA
+do
+ sudo usermod -g Recherches $x
+done
+
+for y in LIT KET JAD
+do
+ sudo usermod -g Dev $y
+done
+
+sudo usermod -g ING ROM
+sudo usermod -g ING ALD
