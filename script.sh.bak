@@ -22,4 +22,30 @@ sudo useradd -m -p $mdp $i
 
 done
 
-#mettre ROD sur groupe primaire 2001 a voir
+#Placer les users dans les groupes
+sudo usermod -g Recherches -G ADMRECH ROD
+echo ROD
+sudo usermod -g Recherches SAF
+echo SAF
+sudo usermod -g Recherches ALC
+echo ALC
+sudo usermod -g Recherches JEL
+echo JEL
+sudo usermod -g Recherches SOA
+echo SOA
+sudo usermod -g Dev -G ADMDEV NAD
+echo NAD
+sudo usermod -g Dev LIT
+echo LIT
+sudo usermod -g Dev KET
+echo KET
+sudo usermod -g Dev JAD
+echo JAD
+sudo usermod -g ING -G ADMING HES
+echo HES
+sudo usermod -g ING ROM
+echo ROM
+sudo usermod -g ING ALD
+echo ALD
+sudo usermod -aG ADMRECH,ADMDEV,ADMING BIP
+echo BIP
