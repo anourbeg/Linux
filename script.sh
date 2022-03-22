@@ -103,74 +103,74 @@ sudo usermod -g ING ALD
 #chown : attribution des directory aux user
 #chmod : changement permission
 
-mkdir /home/ROD/Public
-mkdir /home/ROD/Privé
-mkdir /home/ROD/Admin Recherche
-mkdir /home/ROD/Recherche
-chown -R ROD:RECH /home/ROD
+sudo mkdir /home/ROD/Public
+sudo mkdir /home/ROD/Privé
+sudo mkdir /home/ROD/Admin
+sudo mkdir /home/ROD/Recherche
+sudo chown -R ROD:RECH /home/ROD
 
-mkdir /home/SAF/Public
-mkdir /home/SAF/Privé
-mkdir /home/SAF/Recherche
-chown -R SAF:RECH /home/SAF
+sudo mkdir /home/SAF/Public
+sudo mkdir /home/SAF/Privé
+sudo mkdir /home/SAF/Recherche
+sudo chown -R SAF:RECH /home/SAF
 
-mkdir /home/ALC/Public
-mkdir /home/ALC/Privé
-mkdir /home/ALC/Recherche
-chown -R ALC:RECH /home/ALC
+sudo mkdir /home/ALC/Public
+sudo mkdir /home/ALC/Privé
+sudo mkdir /home/ALC/Recherche
+sudo chown -R ALC:RECH /home/ALC
 
-mkdir /home/JEL/Public
-mkdir /home/JEL/Privé
-mkdir /home/JEL/Recherche
-chown -R JEL:RECH /home/JEL
+sudo mkdir /home/JEL/Public
+sudo mkdir /home/JEL/Privé
+sudo mkdir /home/JEL/Recherche
+sudo chown -R JEL:RECH /home/JEL
 
-mkdir /home/SOA/Public
-mkdir /home/SOA/Privé
-mkdir /home/SOA/Recherche
-chown -R SOA:RECH /home/SOA
+sudo mkdir /home/SOA/Public
+sudo mkdir /home/SOA/Privé
+sudo mkdir /home/SOA/Recherche
+sudo chown -R SOA:RECH /home/SOA
 
-mkdir /home/NAD/Public
-mkdir /home/NAD/Privé
-mkdir /home/NAD/Admin Développement
-mkdir /home/NAD/Développement
-chown -R NAD:DEV /home/NAD
+sudo mkdir /home/NAD/Public
+sudo mkdir /home/NAD/Privé
+sudo mkdir /home/NAD/Admin
+sudo mkdir /home/NAD/Développement
+sudo chown -R NAD:DEV /home/NAD
 
-mkdir /home/LIT/Public
-mkdir /home/LIT/Privé
-mkdir /home/LIT/Développement
-chown -R LIT:DEV /home/LIT
+sudo mkdir /home/LIT/Public
+sudo mkdir /home/LIT/Privé
+sudo mkdir /home/LIT/Développement
+sudo chown -R LIT:DEV /home/LIT
 
-mkdir /home/KET/Public
-mkdir /home/KET/Privé
-mkdir /home/KET/Développement
-chown -R KET:DEV /home/KET
+sudo mkdir /home/KET/Public
+sudo mkdir /home/KET/Privé
+sudo mkdir /home/KET/Développement
+sudo chown -R KET:DEV /home/KET
 
-mkdir /home/JAD/Public
-mkdir /home/JAD/Privé
-mkdir /home/JAD/Développement
-chown -R JAD:DEV /home/JAD
+sudo mkdir /home/JAD/Public
+sudo mkdir /home/JAD/Privé
+sudo mkdir /home/JAD/Développement
+sudo chown -R JAD:DEV /home/JAD
 
-mkdir /home/HES/Public
-mkdir /home/HES/Privé
-mkdir /home/HES/Admin ingénierie
-mkdir /home/HES/ingénierie
-chown -R HES:ING /home/HES
+sudo mkdir /home/HES/Public
+sudo mkdir /home/HES/Privé
+sudo mkdir /home/HES/Admin
+sudo mkdir /home/HES/ingénierie
+sudo chown -R HES:ING /home/HES
 
-mkdir /home/ROM/Public
-mkdir /home/ROM/Privé
-mkdir /home/ROM/ingénierie
-chown -R ROM:ING /home/ROM
+sudo mkdir /home/ROM/Public
+sudo mkdir /home/ROM/Privé
+sudo mkdir /home/ROM/ingénierie
+sudo chown -R ROM:ING /home/ROM
 
-mkdir /home/ALD/Public
-mkdir /home/ALD/Privé
-mkdir /home/ALD/ingénierie
-chown -R ALD:ING /home/ALD
+sudo mkdir /home/ALD/Public
+sudo mkdir /home/ALD/Privé
+sudo mkdir /home/ALD/ingénierie
+sudo chown -R ALD:ING /home/ALD
 
-mkdir /home/RECH 
-chown -R ROD:RECH /home/RECH
+sudo mkdir /home/RECH 
+sudo chown -R ROD:RECH /home/RECH
 
-mkdir /home/DEV
-chown -R NAD:DEV /home/DEV
+sudo mkdir /home/DEV
+sudo chown -R NAD:DEV /home/DEV
 
-mkdir /home/ING
-chown -R HES:ING /home/ING
+sudo mkdir /home/ING
+sudo chown -R HES:ING /home/ING
