@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # création des groupes
 sudo groupadd -g 2000 RECH
 sudo groupadd -g 3000 DEV
