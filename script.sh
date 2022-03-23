@@ -54,7 +54,7 @@ sudo chage $zz -M 60 #changement de mot de passe user après 60 jours
 sudo mkdir /home/$zz/Public #création du dossier Public chez les users
 sudo mkdir /home/$zz/Privé #création du dossier Privé chez les users
 sudo mkdir /home/$zz/Recherche #création du dossier Recherche chez les users
-sudo chown -R $zz:RECH /home/$zz
+sudo chown -R $zz:DEV /home/$zz
 #clear
 done
 
@@ -76,7 +76,7 @@ sudo chage $zzz -M 60 #changement de mot de passe user après 60 jours
 sudo mkdir /home/$zzz/Public #création du dossier Public chez les users
 sudo mkdir /home/$zzz/Privé #création du dossier Privé chez les users
 sudo mkdir /home/$zzz/Recherche #création du dossier Recherche chez les users
-sudo chown -R $zzz:RECH /home/$zzz
+sudo chown -R $zzz:DEV /home/$zzz
 #clear
 done
 
