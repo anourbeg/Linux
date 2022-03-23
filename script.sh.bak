@@ -30,6 +30,10 @@ sudo usermod -u $uid $z
 echo "UID" $uid "pour" $z
 echo " "
 sudo chage $z -M 60 #changement de mot de passe user après 60 jours
+sudo mkdir /home/$z/Public #création du dossier Public chez les users
+sudo mkdir /home/$z/Privé #création du dossier Privé chez les users
+sudo mkdir /home/$z/Recherche #création du dossier Recherche chez les users
+sudo chown -R $z:RECH /home/$z
 #clear
 done
 
@@ -47,6 +51,10 @@ sudo usermod -u $uid $zz
 echo "UID" $uid "pour" $zz
 echo " "
 sudo chage $zz -M 60 #changement de mot de passe user après 60 jours
+sudo mkdir /home/$zz/Public #création du dossier Public chez les users
+sudo mkdir /home/$zz/Privé #création du dossier Privé chez les users
+sudo mkdir /home/$zz/Recherche #création du dossier Recherche chez les users
+sudo chown -R $zz:RECH /home/$zz
 #clear
 done
 
@@ -65,6 +73,10 @@ sudo usermod -u $uid $zzz
 echo "UID" $uid "pour" $zzz
 echo " "
 sudo chage $zzz -M 60 #changement de mot de passe user après 60 jours
+sudo mkdir /home/$zzz/Public #création du dossier Public chez les users
+sudo mkdir /home/$zzz/Privé #création du dossier Privé chez les users
+sudo mkdir /home/$zzz/Recherche #création du dossier Recherche chez les users
+sudo chown -R $zzz:RECH /home/$zzz
 #clear
 done
 
@@ -98,72 +110,10 @@ done
 sudo usermod -g ING ROM
 sudo usermod -g ING ALD
 
-#mkdir : chaque user file
-#chown : attribution des directory aux user
-#chmod : changement permission
-
-sudo mkdir /home/ROD/Public
-sudo mkdir /home/ROD/Privé
 sudo mkdir /home/ROD/Admin
-sudo mkdir /home/ROD/Recherche
-sudo chown -R ROD:RECH /home/ROD
-
-sudo mkdir /home/SAF/Public
-sudo mkdir /home/SAF/Privé
-sudo mkdir /home/SAF/Recherche
-sudo chown -R SAF:RECH /home/SAF
-
-sudo mkdir /home/ALC/Public
-sudo mkdir /home/ALC/Privé
-sudo mkdir /home/ALC/Recherche
-sudo chown -R ALC:RECH /home/ALC
-
-sudo mkdir /home/JEL/Public
-sudo mkdir /home/JEL/Privé
-sudo mkdir /home/JEL/Recherche
-sudo chown -R JEL:RECH /home/JEL
-
-sudo mkdir /home/SOA/Public
-sudo mkdir /home/SOA/Privé
-sudo mkdir /home/SOA/Recherche
-sudo chown -R SOA:RECH /home/SOA
-
-sudo mkdir /home/NAD/Public
-sudo mkdir /home/NAD/Privé
 sudo mkdir /home/NAD/Admin
-sudo mkdir /home/NAD/Développement
-sudo chown -R NAD:DEV /home/NAD
-
-sudo mkdir /home/LIT/Public
-sudo mkdir /home/LIT/Privé
-sudo mkdir /home/LIT/Développement
-sudo chown -R LIT:DEV /home/LIT
-
-sudo mkdir /home/KET/Public
-sudo mkdir /home/KET/Privé
-sudo mkdir /home/KET/Développement
-sudo chown -R KET:DEV /home/KET
-
-sudo mkdir /home/JAD/Public
-sudo mkdir /home/JAD/Privé
-sudo mkdir /home/JAD/Développement
-sudo chown -R JAD:DEV /home/JAD
-
-sudo mkdir /home/HES/Public
-sudo mkdir /home/HES/Privé
 sudo mkdir /home/HES/Admin
-sudo mkdir /home/HES/ingénierie
-sudo chown -R HES:ING /home/HES
 
-sudo mkdir /home/ROM/Public
-sudo mkdir /home/ROM/Privé
-sudo mkdir /home/ROM/ingénierie
-sudo chown -R ROM:ING /home/ROM
-
-sudo mkdir /home/ALD/Public
-sudo mkdir /home/ALD/Privé
-sudo mkdir /home/ALD/ingénierie
-sudo chown -R ALD:ING /home/ALD
 
 sudo mkdir /home/RECH 
 sudo chown -R ROD:RECH /home/RECH
