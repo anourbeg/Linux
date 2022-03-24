@@ -66,6 +66,8 @@ sudo chmod 1770 /home/$zz/Developpement
 sudo chmod 1700 /home/$zz/Privé
 sudo chmod 1755 /home/$zz/Public
 sudo chmod 1755 /home/$zzcd
+sudo mkdir /home/$zz/Recherche #création du dossier Recherche chez les users
+sudo chown -R $zz:DEV /home/$zz
 #clear
 done
 
@@ -92,6 +94,8 @@ sudo chmod 1770 /home/$zzz/Ingenierie
 sudo chmod 1700 /home/$zzz/Privé
 sudo chmod 1755 /home/$zzz/Public
 sudo chmod 1755 /home/$zzz
+sudo mkdir /home/$zzz/Recherche #création du dossier Recherche chez les users
+sudo chown -R $zzz:DEV /home/$zzz
 #clear
 done
 
