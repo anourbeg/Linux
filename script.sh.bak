@@ -96,7 +96,6 @@ sudo chmod 1755 /home/$zzz/Public
 sudo chmod 1755 /home/$zzz
 sudo mkdir /home/$zzz/Recherche #création du dossier Recherche chez les users
 sudo chown -R $zzz:DEV /home/$zzz
->>>>>>> d6ea80c966e335cf03b98e8a2defec49b8fc2a27
 #clear
 done
 
