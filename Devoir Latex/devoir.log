@@ -1,0 +1,661 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.24)  25 MAR 2022 01:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./devoir.tex
+(devoir.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
+File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen139
+\l@unhyphenated=\language79
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count195
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
+df
+Language: french 2021/07/20 v3.5m French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language22). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language22). Reported on input line 92.
+\FB@nonchar=\count196
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count197
+\FBold@everypar=\toks18
+\FB@Mht=\dimen140
+\mc@charclass=\count198
+\mc@charfam=\count199
+\mc@charslot=\count266
+\std@mcc=\count267
+\dec@mcc=\count268
+\listindentFB=\dimen141
+\descindentFB=\dimen142
+\labelindentFB=\dimen143
+\labelwidthFB=\dimen144
+\leftmarginFB=\dimen145
+\parindentFFN=\dimen146
+\FBfnindent=\dimen147
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\francais
+.ldf
+Language: francais 2021/07/20 v3.5m French support from the babel system
+
+
+Package francais.ldf Warning: Option `francais' for Babel is *deprecated*,
+(francais.ldf)                it might be removed sooner or later. Please
+(francais.ldf)                use `french' instead; reported on input line 31.
+
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
+df
+Language: french 2021/07/20 v3.5m French support from the babel system
+)))
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+) (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\charter.sty
+Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
+) (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+)
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 9.
+
+ (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.fd
+File: t1bch.fd 2004/10/18 font definitions for T1/bch.
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count269
+\l__pdf_internal_box=\box50
+) (devoir.aux)
+\openout1 = `devoir.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Info: Redefining \degres on input line 9.
+LaTeX Info: Redefining \up on input line 9.
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count270
+\scratchdimen=\dimen150
+\scratchbox=\box51
+\nofMPsegments=\count271
+\nofMParguments=\count272
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count273
+\MPscratchDim=\dimen151
+\MPnumerator=\count274
+\makeMPintoPDFobject=\count275
+\everyMPtoPDFconversion=\toks21
+)
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<linux.jpg, id=1, 506.89375pt x 250.9375pt>
+File: linux.jpg Graphic file (type jpg)
+<use linux.jpg>
+Package pdftex.def Info: linux.jpg  used on input line 13.
+(pdftex.def)             Requested size: 341.43306pt x 169.03088pt.
+<latex.jpg, id=2, 225.84375pt x 80.55093pt>
+File: latex.jpg Graphic file (type jpg)
+<use latex.jpg>
+Package pdftex.def Info: latex.jpg  used on input line 22.
+(pdftex.def)             Requested size: 227.62204pt x 81.18987pt.
+ [1
+
+
+{C:/Users/ambro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./linux.jpg>
+ <./latex.jpg>] (devoir.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+
+Overfull \hbox (2.47119pt too wide) in paragraph at lines 16--16
+ [][] []\T1/bch/m/n/14.4 Supprimer un fi-chier ou un dos-sier avec la com- 
+ []
+
+[1
+
+])
+\tf@toc=\write3
+\openout3 = `devoir.toc'.
+
+ [2]
+Chapitre 1.
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 3
+2.
+(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+[1
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+[2]
+Chapitre 2.
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+
+Overfull \hbox (53.81575pt too wide) has occurred while \output is active
+\T1/bch/m/sl/10.95 CHAPITRE 2.  MODULE : LES OUTILS ESSENTIELS POUR LA GESTION 
+DES FICHIERS \T1/bch/m/n/10.95 4
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+<link.jpg, id=33, 776.9025pt x 158.84344pt>
+File: link.jpg Graphic file (type jpg)
+<use link.jpg>
+Package pdftex.def Info: link.jpg  used on input line 153.
+(pdftex.def)             Requested size: 466.14508pt x 95.3068pt.
+
+Overfull \hbox (106.14508pt too wide) in paragraph at lines 153--154
+[]  
+ []
+
+
+Overfull \hbox (53.81575pt too wide) has occurred while \output is active
+\T1/bch/m/sl/10.95 CHAPITRE 2.  MODULE : LES OUTILS ESSENTIELS POUR LA GESTION 
+DES FICHIERS \T1/bch/m/n/10.95 5
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 158--162
+
+ []
+
+<Find.jpg, id=37, 968.86969pt x 241.65282pt>
+File: Find.jpg Graphic file (type jpg)
+<use Find.jpg>
+Package pdftex.def Info: Find.jpg  used on input line 172.
+(pdftex.def)             Requested size: 484.43365pt x 120.82611pt.
+
+Overfull \hbox (124.43365pt too wide) in paragraph at lines 172--173
+[]  
+ []
+
+
+Overfull \hbox (53.81575pt too wide) has occurred while \output is active
+\T1/bch/m/sl/10.95 CHAPITRE 2.  MODULE : LES OUTILS ESSENTIELS POUR LA GESTION 
+DES FICHIERS \T1/bch/m/n/10.95 6
+ []
+
+[6 <./link.jpg> <./Find.jpg>]
+Chapitre 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--207
+
+ []
+
+[7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--241
+
+ []
+
+[8]
+<REGEXP.jpg, id=47, 968.86969pt x 551.05875pt>
+File: REGEXP.jpg Graphic file (type jpg)
+<use REGEXP.jpg>
+Package pdftex.def Info: REGEXP.jpg  used on input line 243.
+(pdftex.def)             Requested size: 387.54102pt x 220.41959pt.
+
+Overfull \hbox (27.54102pt too wide) in paragraph at lines 243--244
+[]  
+ []
+
+<AWK1.jpg, id=48, 330.48468pt x 298.86656pt>
+File: AWK1.jpg Graphic file (type jpg)
+<use AWK1.jpg>
+Package pdftex.def Info: AWK1.jpg  used on input line 250.
+(pdftex.def)             Requested size: 330.48387pt x 298.86581pt.
+[9 <./REGEXP.jpg>]
+<AWK2.jpg, id=52, 438.13687pt x 294.34969pt>
+File: AWK2.jpg Graphic file (type jpg)
+<use AWK2.jpg>
+Package pdftex.def Info: AWK2.jpg  used on input line 253.
+(pdftex.def)             Requested size: 438.13579pt x 294.34895pt.
+
+Overfull \hbox (78.13579pt too wide) in paragraph at lines 253--254
+[]  
+ []
+
+[10 <./AWK1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 256--259
+
+ []
+
+[11 <./AWK2.jpg>]
+Chapitre 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+<PermissionsLettres.png, id=60, 415.5525pt x 68.6565pt>
+File: PermissionsLettres.png Graphic file (type png)
+<use PermissionsLettres.png>
+Package pdftex.def Info: PermissionsLettres.png  used on input line 278.
+(pdftex.def)             Requested size: 249.33342pt x 41.1942pt.
+<PermissionsChiffres.png, id=61, 500.46976pt x 122.25674pt>
+File: PermissionsChiffres.png Graphic file (type png)
+<use PermissionsChiffres.png>
+Package pdftex.def Info: PermissionsChiffres.png  used on input line 282.
+(pdftex.def)             Requested size: 300.28416pt x 73.3546pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--290
+
+ []
+
+[12
+
+ <./PermissionsLettres.png> <./PermissionsChiffres.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Overfull \hbox (4.2175pt too wide) in paragraph at lines 294--295
+\T1/bch/m/n/10.95 spé-ci-fier un chiffre oc-tal pour chaque ca-té-go-rie U-G-O 
+(les droits ne s'ajoutent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+<PermissionsSpÃ©ciales.png, id=67, 590.80725pt x 136.1085pt>
+File: PermissionsSpÃ©ciales.png Graphic file (type png)
+<use PermissionsSpÃ©ciales.png>
+Package pdftex.def Info: PermissionsSpÃ©ciales.png  used on input line 299.
+(pdftex.def)             Requested size: 354.48708pt x 81.66571pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+<ACL.png, id=68, 368.577pt x 13.2495pt>
+File: ACL.png Graphic file (type png)
+<use ACL.png>
+Package pdftex.def Info: ACL.png  used on input line 314.
+(pdftex.def)             Requested size: 368.57608pt x 13.24945pt.
+
+Overfull \hbox (8.57608pt too wide) in paragraph at lines 314--315
+[]  
+ []
+
+
+Overfull \hbox (11.08809pt too wide) in paragraph at lines 317--318
+[]\TS1/bch/m/n/10.95 ˆ \T1/bch/m/n/10.95 Afin de vé-ri-fier les ACL d'un fi-chi
+er on peut uti-li-ser : get-facl [File/FOLDER
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+
+ []
+
+
+Overfull \hbox (29.64915pt too wide) has occurred while \output is active
+\T1/bch/m/sl/10.95 CHAPITRE 4.  MODULE : GÉRER LES PERMISSIONS ET LES QUOTAS EN
+ LINUX \T1/bch/m/n/10.95 13
+ []
+
+[13 <./PermissionsSpÃ©ciales.png> <./ACL.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+
+Overfull \hbox (29.64915pt too wide) has occurred while \output is active
+\T1/bch/m/sl/10.95 CHAPITRE 4.  MODULE : GÉRER LES PERMISSIONS ET LES QUOTAS EN
+ LINUX \T1/bch/m/n/10.95 14
+ []
+
+[14]
+Chapitre 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+
+Overfull \hbox (60.84622pt too wide) in paragraph at lines 340--341
+[]$\OMS/cmsy/m/n/10.95 )$ \T1/bch/m/n/10.95 Pour tra-vailler en run-time il fau
+t uti-li-ser la com-mande : ip [OP-TIONS][OBJETS] ! ! !
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+
+Overfull \hbox (0.65338pt too wide) in paragraph at lines 348--351
+[]\T1/bch/m/n/10.95 1) ajout adresse ip sur in-ter-face : ip ad-dress add dev [
+IN-TER-FACE NAME]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--365
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+[16]
+Annexe A.
+[17
+
+] [18
+
+
+] (devoir.aux) ) 
+Here is how much of TeX's memory you used:
+ 3528 strings out of 478582
+ 58023 string characters out of 2844344
+ 366735 words of memory out of 3000000
+ 21676 multiletter control sequences out of 15000+600000
+ 511538 words of font info for 64 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,5n,62p,366b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/b
+ase/8r.enc}<C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/c
+harter/bchb8a.pfb><C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/type1/bit
+strea/charter/bchbi8a.pfb><C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/bitstrea/charter/bchr8a.pfb><C:/Users/ambro/AppData/Local/Programs/MiKTeX/
+fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/ambro/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on devoir.pdf (21 pages, 600134 bytes).
+PDF statistics:
+ 113 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+

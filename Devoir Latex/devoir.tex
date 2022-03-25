@@ -1,0 +1,379 @@
+\documentclass[a4paper, 11pt, french, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{graphicx}
+\usepackage{charter}
+\usepackage{color}
+
+\begin{document}
+  
+ \begin{titlepage}
+  \begin{center}
+   \includegraphics[width=12cm]{linux.jpg}%
+   \hspace{60pt}%
+   \vspace{50pt}%
+   \LARGE
+   \textbf{Résumé du cours de Linux en Latex}\\
+   \color{red}
+   \textbf{Classe X81}\\
+   Ambroise - Anouar - Quentin\\
+   \vspace{50pt}%
+   \includegraphics[width=8cm]{latex.jpg}%
+  \end{center}
+ \end{titlepage}
+      
+   \tableofcontents
+   \frontmatter
+   \mainmatter
+ \chapter{MODULE : Les outils essentiels}
+  \section{\Large  Les 7 premières commandes}
+   \begin{flushleft}
+    • \textbf {\textit{\color{red}whoaim}} : Renvoie votre login-name actuel.\\
+    • \textbf {\textit{\color{red}hostname}} : Renvoie le nom de la machine sur laquelle vous travaillez.\\
+    • \textbf {\textit{\color{red}date}} : Renvoie la date actuelle.\\
+    • \textbf {\textit{\color{red}uname}} : Renvoie des informations sur le système actuel.\\
+    • \textbf{\textit{\color{red}passwd}} : Permet au user de changer son mot-de-passe et permet à     l’administrateur ou le root de changer le mot-de-passe d’un user.\\
+    • \textbf{\textit{\color{red}touch}} : Permet la création d’un fichier vide ou la mise à jour de la date de modification d’un ficher existant.\\
+    • \textbf{\textit{\color{red}last}} : Renvoie la liste des utilisateurs qui se sont récemment connectés au système\\
+   \end{flushleft}      
+  \section{\Large Obtenir de l’aide }
+	\subsection{Avec l’attribut --help}
+	 Pour obtenir une aide rapide sur une commande, on utilise l’attribut --help à la suite de la commande.
+	\subsection{Avec la commande man} 
+     {\color{red}Man} est une commande qui permet d’obtenir de l’aide quant à l’utilisation,
+     la syntaxe et les attributs des autres commandes Linux.\\
+     La commande man s’utilise avec la syntaxe suivante : man [Nø section] [nom de la commande recherchée.\\
+     Il peut arriver que man ne soit pas à jours et ne vous renvoie rien ou des informations lacunaires: dans ce cas vous pouvez mettre à jours la base de donnée de man grâce à la commande mandb.
+  \section{\Large  Comprendre les outils du « SHELL»}
+   A) \textbf{Le « TAB Completion »} : le SHELL possède la capacité de compléter vos commandes si vous tapez sur « \textbf{TAB} » et que celle-ci ne souffre d’aucune ambiguïté. Si votre commande souffre d’ambiguïté, tapez 2 x sur «TAB » pour obtenir une liste réduite de commande.\\\\
+   B) \textbf{History} : Le SHELL référence l’ensemble des commandes que vous utilisez dans la console et est capable de vous les restituer.\\
+    History référence un fichier qui conserve une trace des commandes tapées et ce de manière persistance même après reboot.\\\\
+   C) \textbf{Les redirections} $\Rightarrow$ il existe trois canaux principaux : \\
+   
+	1) {\color{red}STDIN} : c’est l’entrée standard (généralement le clavier)\\
+	
+	2) {\color{red}STDOUT} : c’est la sortie standard (généralement l’écran)\\
+	
+	3) {\color{red}STDERR} : c’est le canal d’erreur (généralement vers un fichier)\\
+	
+      Les redirections permettent de rediriger chaque canal selon nos besoins.\\
+
+• Exemple : il est possible de diriger la sortie standard vers un fichier plutôt que vers l’écran.\\\\
+D) \textbf{Les pipes « | »} :
+Le pipe permet de rediriger la sortie d’une commande dans l’entrée d’une seconde afin que la deuxième commande effectue un traitement sur le résultat de la première.
+\chapter{MODULE : Les outils essentiels pour la gestion des fichiers}
+\section{\Large L’arborescence du système de fichier} 
+ Cette structure peut sensiblement varier en fonction des distributions.\\
+$\Rightarrow$ Mais un tronc commun est communément admis c’est le « FHS : file hierarchy
+standard »\\
+$\Rightarrow$ Chaque arborescence de fichier en Linux prend toujours naissance avec le
+« root directory » ou « / »\\
+$\Rightarrow$ Depuis le « / » l’arborescence se dessine autour de dossiers fondamentaux
+pour le fonctionnement du système.\\
+Ce système de fichier peut être héberger sur un seul device de stockage\\
+$\Rightarrow$ HDD\\
+$\Rightarrow$ SSD\\
+$\Rightarrow$ Etc\\
+• Cependant, il est courant et conseillé d’isoler certains dossiers sur des devices différents.\\
+$\Rightarrow$ Exemple de dossiers couramment isolé sur un autre device de stockage :\\
+ /home : parce que c’est un dossier souvent très volumineux\\
+ /var : parce que c’est un dossier pouvant saturé le système puisqu’il héberge les fichiers de type « dynamique »\\
+$\Rightarrow$ Pour pouvoir réaliser cette isolation Linux se repose sur le système de « MOUNT ».\\
+$\Rightarrow$ Mount permet de connecter une partie du système de fichier à un stockage physique particulier de la machine.\\
+\textbf{Le principe du mount est donc de connecter des parties du système de fichier à la représentation du système de stockage.}
+\section{\Large Lister les fichiers avec ls} 
+ 
+• Lister les fichiers en Linux est essentiel puisque nous travaillons principalement en ligne de commandes.\\
+\textbf{ls -a} : renvoie la liste de tous les fichiers et des dossiers présent dans le
+répertoire courant.\\
+\textbf{ls -lrt} : renvoie la liste des fichiers et des dossiers classés en fonction du temps
+de dernière modification
+ 
+\section{\Large Utiliser les SHELL wildcarts} 
+ 
+• Le SHELL Linux possède la capacité de globbing :\\
+$\Rightarrow$ C’est à dire que le SHELL est capable d’interpréter des symboles de
+remplacements dans les commandes.\\
+$\Rightarrow$ * : remplace plusieurs caractère inconnus.\\
+$\Rightarrow$ ? : remplace un caractère inconnu.\\
+$\Rightarrow$ [a-9] : remplace un caractère par un des caractères du
+« range » défini.
+ 
+ 
+\section{\Large Copier un fichier avec la commande cp}  
+ 
+• Pour copier un fichier ou un dossier d’un emplacement à l’autre dans l’arborescence de
+fichiers, vous devez utiliser la commande :\\
+$\Rightarrow$ Pour un fichier : cp [SOURCE] [DESTINATION]\\
+$\Rightarrow$ Pour un dossier : cp -R [SOURCE] [DESTINATION]
+ 
+\section{\Large Travailler avec les dossiers}
+
+• La commande cd (change directory)\\
+$\Rightarrow$ Elle permet de se déplacer dans le système. Le chemin peut être absolu ou relatif.\\
+$\Rightarrow$ cd . permet de rester dans le répertoire courant.\\
+$\Rightarrow$ cd .. permet de remonter dans le répertoire parent.\\\\
+• La commande mkdir(make directory)$\Rightarrow$ permet de créer un dossier dans le système.\\
+
+• La commande rmdir (remove directory) $\Rightarrow$ permet de supprimer un dossier dans le système.
+
+
+\section{\Large Utiliser les chemins absolus et relatifs} 
+
+• \textbf{Un chemin absolu} est un chemin qui commence à la racine du système de fichier.
+ Dans notre cas cette racine est « / » aussi appelé « root ».\\
+
+• \textbf{Un chemin relatif} est un chemin qui commence à la position actuelle dans le système de fichier.
+
+\section{\Large Déplacer un fichier avec la commande mv}
+
+• Techniquement il est possible de déplacer un fichier avec la commande cp mais celle-ci à le désavantage de conserver une version du fichier à l’emplacement originel.\\
+• Pour cela la commande mv a la capacité de recopier le fichier dans une autre partie de
+l’arborescence de fichier tout en effaçant le fichier de son emplacement originel.\\
+• Il est à noter que d’un point de vue système, renommer un fichier revient à déplacer(mv) ou copier se fichier(cp) avec un autre nom dans une [DESTINATION == SOURCE]
+
+\section{\Large Supprimer un fichier ou un dossier avec la commande rm}
+
+• La suppression de fichiers ou de dossiers en Linux se fait via la commande rm.\\
+$\Rightarrow$ Pour supprimer un fichier : rm [SOURCE]\\
+$\Rightarrow$ Pour supprimer un dossier : rm -r [SOURCE]\\
+$\Rightarrow$ Pour supprimer un dossier sans confirmation : rm -rf [SOURCE]
+
+\section{\Large Comprendre le Hard-Link et le Symbolic-Link} 
+
+• Les systèmes Linux possèdent une caractéristique très utiles que l’on appel « Link »\\
+• Il existe deux types de « Link »\\
+
+$\Rightarrow$ Le Hard-Link : est un nom qui référence un « inode » qui lui même référence un bloc sur le périphérique de stockage.\\
+
+$\Rightarrow$ Le symbolic-Link : est un nom qui référence un Hard-link
+
+\begin{flushleft}
+\includegraphics[scale=0.6]{link.jpg}
+\end{flushleft}
+
+\section{\Large Créer un link avec la commande ln}
+
+• Pour créer un « Link » dans un système Linux, vous devez utiliser la commande ln\\
+• Peut importe que vous vouliez créer un Hard-Link ou un Symbolic-Link\\
+• ln [SOURCE] [LINK-NAME] : permet de créer un HARD-LINK\\
+• ln -s [SOURCE] [LINK-NAME] : permet de créer un Symbolic-Link\\
+ 
+ \section{\Large Trouver un fichier avec la commande find}
+ 
+ • Pour configurer certains services ou simplement parfois pour exécuter un script, il est nécessaire de trouver le fichier de configuration ou le fichier script dans le système de fichier.\\
+• Cela peut s’avérer difficile étant donné la quantité de fichier contenue dans un OS.\\
+$\Rightarrow$ find [START-POINT] -name « [FILENAME] » : permet de chercher un fichier/dossier de manière récursive grâce à son nom à partir du point de départ.\\
+$\Rightarrow$ find [START-POINT] -user « [USERNAME] » : permet de chercher tous les fichiers/dossiers appartenant à un utilisateur de manière
+récursive grâce au nom de l’utilisateur à partir du point de départ.
+ 
+\begin{flushleft}
+\includegraphics[scale=0.5]{Find.jpg}
+\end{flushleft}
+ 
+\chapter{MODULE : Travailler avec des fichiers textes}
+\section{\Large Comprendre VIM} 
+
+• Par tradition, il existe deux logiciels d’édition couramments utilisés pour réussir à éditer des fichiers en ligne de commande afin de ne pas devoir sortir du « SHELL »\\
+ 
+$\Rightarrow$ VIM (celui que nous allons voir)\\
+$\Rightarrow$ Emacs ( le plus compliqué des deux à maitriser)\\
+
+• Pour éditer un fichier texte avec « VIM » vous devez utiliser la commande vim [SOURCE DU FICHIER]\\
+
+• vim fonctionne sous 3 modes distinct :\\
+1) Le mode « command » : permet de sauvegarder, quitter, rechercher …\\
+2) Le mode « insert » : permet d’éditer le texte ...\\
+3) Le mode « visual » : permet d’effectuer des sélections dans le texte ...\\
+
+• Il est très important de comprendre que chaque action ne peut se faire que dans le
+mode qui lui est dédié
+
+• En fonction des modes « VIM » possède plusieurs options :\\
+
+- \underline{En mode COMMANDE :}\\
+- :w (sauvegarde votre fichier)\\
+- :q (quitte le fichier)\\
+- :! ( force l’action)\\
+- :wq ! (sauvegarde et quitte en forçant l’action)\\
+- u (undo)\\\\
+- \underline{En mode INSERT :}\\
+- Vous pouvez simplement l’utiliser comme un éditeur de texte sans l’option copier – coller.\\\\
+- \underline{En mode VISUAL :}\\
+- D (delete la sélection)\\
+- Y (copie la sélection)\\
+- P (colle la sélection)\\
+
+\section{\Large Travailler avec le pager less} 
+
+• less [SOURCE] est une commande qui à la capacité d’organiser le texte en page pour le « SHELL ». \\
+
+\section{\Large Lire un fichier texte grâce à cat et tac} 
+
+• Certain fichiers texte sont suffisamment court pour ne pas requérir à less.\\
+• La commande cat [SOURCE] est alors utile pour présenter le contenu du fichier dans le « SHELL »\\
+
+\section{\Large Lire le début ou la fin d’un fichier avec head tail} 
+
+• head -n[nombre de lignes] [SOURCE] : présente les 10 premières lignes du fichier dans le
+« SHELL »\\
+• tail -n[nombre de lignes] [SOURCE] : présente les 10 dernières lignes du fichier dans le
+« SHELL »
+
+\section{\Large Travailler avec la commande grep en dehors de |} 
+
+• grep est une des commandes les plus utiles en Linux.\\
+• Exemple : vous chercher tout les fichiers ou il est écrit « dhcp » dans votre système.\\
+• grep -iR [Expression recherchée] 2>/dev/null\\
+• -i : attribut qui rend grep case insensitive\\
+• -R : attribut qui permet à grep de travailler de manière récursive\\
+• 2>/dev/null : redirection des erreurs dans le /dev/null\\
+
+\section{\Large Comprendre les « REGEXP »} 
+
+• Les expressions régulière sont des modelé de texte utilisable
+par des outils présent dans Linux comme grep\\
+• Il ne faut pas confondre les « REGEXP » et le « globbing » Linux\\
+$\Rightarrow$ Le « globbing » est interne au « SHELL »\\
+$\Rightarrow$ Les « REGEXP » est générale et utilisable par toute les
+commandes qui traite des chaines de caractère.\\
+
+\begin{flushleft}
+\includegraphics[scale=0.4]{REGEXP.jpg}
+\end{flushleft}
+
+
+\section{\Large Utiliser les commandes awk, sort, tr} 
+• awk est une commande qui permet de découper un texte en fonction de ses délimiteurs.
+\begin{flushleft}
+\includegraphics{AWK1.jpg}
+\end{flushleft}
+\begin{flushleft}
+\includegraphics{AWK2.jpg}
+\end{flushleft}
+
+• sort est une commande qui permet de trier le texte dans l’ordre alphabétique ou numérique.\\
+$\Rightarrow$ sort [source] (alphabétique)\\
+$\Rightarrow$ sort -n [source] (numérique)\\
+
+• tr est une commande qui permet réaliser une traduction de certains caractères du texte en d’autres\\
+$\Rightarrow$ tr [caractère(s) d’origine] [caractère(s) de remplacement]\\
+$\Rightarrow$ tr [état d’origine] [état de remplacement]
+
+ 
+\chapter{MODULE : Gérer les permissions et
+les quotas en Linux}
+\section{\Large Les permissions en Linux} 
+
+• Le fonctionnement du système de permissions en linux est assez spécial de par son historique. Au début, personne ne pensait à la sécurité car on ne pensait pas au réseau. Lorsque les premiers développeur ont voulu apporter un semblant de sécurité, ils ont mit en place le système de permissions.\\
+• Le système de permission se repose sur trois axes principaux :\\
+ $\Rightarrow$ Les Users\\
+ $\Rightarrow$ Les Groupes\\
+ $\Rightarrow$ Les Autres \\
+
+• Les permissions se notent de deux manières différentes. Soit sous forme de lettres (U-User / G-Group / O-Others) soit sous forme de chiffre (sur base octale)\\
+
+\begin{flushleft}
+\includegraphics[scale=0.6]{PermissionsLettres.png}
+\end{flushleft}
+
+\begin{flushleft}
+\includegraphics[scale=0.6]{PermissionsChiffres.png}
+\end{flushleft}
+
+
+
+
+ 1) Commande pour les permissions en UGO : chmod [UGO permissions] [PATH] \\
+ 2) Commande pour les permissions en Octal : chmod [octal permissions] [PATH] \\
+
+
+• UGO : « u » / « g » / « o » "+" ou "-" r-w-x pour ajouter/retirer un droit à un User \\
+
+• Octal : choix du chiffre octal en sachant que r=4, w=2, x=1. Il faut spécifier un chiffre octal pour chaque catégorie U-G-O (les droits ne s'ajoutent pas à ceux présent mais les écrasent) \\
+
+• il existe aussi des permissions spéciales pour gérer certain aspect non couverts par les permissions standards \\
+
+\begin{flushleft}
+\includegraphics[scale=0.6]{PermissionsSpéciales.png}
+\end{flushleft}
+
+
+ 1) Commande pour les permissions spéciales : chmod [UGO permissions] [PATH] (u+s pour les SUID, g+s pour les SGID et +t pour le stickybit) \\
+
+ 2) Commande pour les permissions spéciales en Octal : chmod [special permissions][octal permissions] [PATH] \\
+
+
+\section{\Large Les ACL} 
+
+• Les permissions vue au dessus sont cependant pas suffisantes pour régler tout les problèmes qui arrivent c'est pourquoi les ACL (Access Control List) sont créés. \\
+
+• il existe deux sortes de ACL : les normales (appliquées sur les fichiers deja existants) et les default (fichier créés par la suite). la commande pour les gérer est : setfacl -Rm [Permissions Modification] [File/FOLDER PATH]. La seule différence va être la lettre utilisé après le Rm de la commande  (d pour default)  \\
+\begin{flushleft}
+\includegraphics[scale=1]{ACL.png}
+\end{flushleft}
+
+ • Afin de vérifier les ACL d'un fichier on peut utiliser : getfacl [File/FOLDER PATH]\\
+
+• Les attributs éttendu ont été créé afin de pouvoir rejouter un couche de permissions sur les fichiers : il y a 2 commandes afin de les manipuler, lsattr pour les lister et chattr pour les modifier\\
+
+ $\Rightarrow$ chattr +[ATTRIBUTS] [SOURCE] avec +/- pour ajout et retrait et -R pour l'appliqueer au reste des fichiers de cette branche.\\
+
+\section{\Large Les Quotas}
+
+• Les quotas ont été inventé fin de restreindre des utilisateur pour ne pas qu'ils puissent saturer l'espace disque des serveurs. Il y a deux sortes de limites :   \\
+
+ 1) les quotas Softs qui sont des limites dépassable pendant un certain temps. \\
+ 2) les quotas Hard, qui ne permettent pas de dépassement. \\
+
+• Ces quotas peuvent s'appliquer sur deux types de limites : les inodes (le nombre de fichiers) et les blocks (la taille des fichiers).\\
+
+• la commande "quotaon" active les quotas ou "quotaoff" les désactive avec l'argument -a pour le faire sur tous. la commande "repquota -a" donne le statut actuel des quotas.\\
+
+\chapter{MODULE : configurer les éléments réseau}
+\section{\Large Configuration réseau runtime}
+
+• En Linux, il existe deux types de configuration réseau : runtime (pour les test et le monitoring) et persistante (pour l'accès permanent au réseau).\\
+
+
+ $\Rightarrow$ Pour travailler en runtime il faut utiliser la commande : ip [OPTIONS][OBJETS] !!! commande assez complète, l'utilisation de --help est conseillée. \\
+
+ 
+• La commande "ip link" permet de voir les interfaces réseau dispo et "ip address show" permet de les afficher avec leur adresse.\\
+
+
+ $\Rightarrow$ "ip address show" : 1) Lo : interface  loopback, 2) enp... : interface physique, 3) WLP... : interface wireless, 4)Vibr0 : interface virtuelle pour machine virtuelle. \\
+ 
+ 1) ajout adresse ip sur interface : ip address add dev [INTERFACE NAME] [IP+mask] (on peut remplacer "add" par "del" ou "replace" pour en supprimer une ou la remplacer).\\
+ 2) ping interface : ping ip .\\
+ 3) default getaway : ip route show .\\
+ 
+ 
+\section{\Large Configuration réseau persistante}
+
+• \textbf{nmcli}  : c'est le programme le plus performant et le plus courant pour faire des configuration réseau persistantes. Afin de naviguer fficacement dans nmcli il est très utile d'utiliser l'auto-completion du "bash". 2 options sont fort utilisées: Device et surtout Connection. \\
+
+1) "nmcli connection modify" afin de trouver la bonne interface à modifier. Il est donc possible assez facilement de s'y retrouver en utilisant l'auto-completion et en voyagant de proche en proche afin de pouvoir tout configurer.\\
+2) "nmcli connection up [CONNECTION NAME]" afin d'activer l'interface\\
+
+
+• /etc/hostname pour la modification du hostname \\
+• /etc/hosts pour les hostname à distance\\
+• /etc/resolv.conf nom et adresse ip des servurs dns !!! ne pas modifier sauf via nmcli\\
+•/etc/nsswitch.conf pour les priorité dns\\ 
+
+
+$\Rightarrow$ ping [IP ADRESS / HOSTNAME] pour les test de connectivité à une interface \\
+$\Rightarrow$  dig [HOSTNAME] pur vérifier les dns et la validité du hostname\\
+
+
+ 
+   \appendix
+   \chapter{Commandes utiles}
+      \section{Section d'annexe}
+    
+   \backmatter
+   
+   \chapter{Épilogue}
+\end{document}
