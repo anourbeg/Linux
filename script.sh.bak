@@ -12,8 +12,7 @@ sudo groupadd -g 8000 DIRECTION
 # création d'un fichier pour sauvegarder les mots de passes users
 sudo touch MDP
 sudo chmod 1666 MDP
-sudo echo Voici la liste des mots de passe>> MDP
-sudo echo  >> MDP 
+sudo echo Voici la liste des mots de passes en clair :>> MDP
 
 # boucle création des users RECH + attribution des mots de passe aléatoires + copie dans le fichier MDP + créations directories + attribution des droits aux directories
 uid=2000 
@@ -22,25 +21,19 @@ for z in ROD SAF ALC JEL SOA
  do
  ((++uid))
  mdp=`< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12`
- echo "Mot de passe" $z = $mdp
-sudo echo User $z: $mdp>> MDP
-
-#sudo useradd -m -p $mdp $z
-sudo useradd -m $z
-echo $z:$mdp | chpasswd
-sudo usermod -u $uid $z
-echo "UID" $uid "pour" $z
-echo " "
-sudo chage $z -M 60 #changement de mot de passe user après 60 jours
-sudo mkdir /home/$z/Public #création du dossier Public chez les users
-sudo mkdir /home/$z/Privé #création du dossier Privé chez les users
-sudo mkdir /home/$z/Recherche #création du dossier Recherche chez les users
-sudo chown -R $z:RECH /home/$z
-sudo chmod 1770 /home/$z/Recherche
-sudo chmod 1700 /home/$z/Privé
-sudo chmod 1755 /home/$z/Public
-sudo chmod 1755 /home/$z
-#clear
+ sudo echo User $z: $mdp>> MDP
+ sudo useradd -m $z
+ sudo echo $z:$mdp | chpasswd
+ sudo usermod -u $uid $z
+ sudo chage $z -M 60 #changement de mot de passe user après 60 jours
+ sudo mkdir /home/$z/Public #création du dossier Public chez les users
+ sudo mkdir /home/$z/Privé #création du dossier Privé chez les users
+ sudo mkdir /home/$z/Recherche #création du dossier Recherche chez les users
+ sudo chown -R $z:RECH /home/$z
+ sudo chmod 1770 /home/$z/Recherche
+ sudo chmod 1700 /home/$z/Privé
+ sudo chmod 1755 /home/$z/Public
+ sudo chmod 1755 /home/$z
 done
 
 # boucle création des users DEV + attribution des mots de passe aléatoires + copie dans le fichier MDP + créations directories + attribution des droits aux directories
@@ -49,26 +42,20 @@ uid=3000
 for zz in NAD LIT KET JAD
  do
  ((++uid))
-mdp=`< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12`
-echo "Mot de passe" $zz = $mdp
-sudo echo User $zz: $mdp>> MDP
-sudo useradd -m $zz
-echo $zz:$mdp | chpasswd
-sudo usermod -u $uid $zz
-echo "UID" $uid "pour" $zz
-echo " "
-sudo chage $zz -M 60 #changement de mot de passe user après 60 jours
-sudo mkdir /home/$zz/Public #création du dossier Public chez les users
-sudo mkdir /home/$zz/Privé #création du dossier Privé chez les users
-sudo mkdir /home/$zz/Developpement #création du dossier Recherche chez les users
-sudo chown -R $zz:DEV /home/$zz
-sudo chmod 1770 /home/$zz/Developpement
-sudo chmod 1700 /home/$zz/Privé
-sudo chmod 1755 /home/$zz/Public
-sudo chmod 1755 /home/$zzcd
-sudo mkdir /home/$zz/Recherche #création du dossier Recherche chez les users
-sudo chown -R $zz:DEV /home/$zz
-#clear
+ mdp=`< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12`
+ sudo echo User $zz: $mdp>> MDP
+ sudo useradd -m $zz
+ sudo echo $zz:$mdp | chpasswd
+ sudo usermod -u $uid $zz
+ sudo chage $zz -M 60 #changement de mot de passe user après 60 jours
+ sudo mkdir /home/$zz/Public #création du dossier Public chez les users
+ sudo mkdir /home/$zz/Privé #création du dossier Privé chez les users
+ sudo mkdir /home/$zz/Developpement #création du dossier Recherche chez les users
+ sudo chown -R $zz:DEV /home/$zz
+ sudo chmod 1770 /home/$zz/Developpement
+ sudo chmod 1700 /home/$zz/Privé
+ sudo chmod 1755 /home/$zz/Public
+ sudo chmod 1755 /home/$zz
 done
 
 # boucle création des users ING + attribution des mots de passe aléatoires + copie dans le fichier MDP + créations directories + attribution des droits aux directories
@@ -77,36 +64,28 @@ uid=4000
 for zzz in HES ROM ALD
  do
  ((++uid))
-mdp=`< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12`
-echo "Mot de passe" $zzz = $mdp
-sudo echo User $zzz: $mdp>> MDP
-sudo useradd -m $zzz
-echo $zzz:$mdp | chpasswd
-sudo usermod -u $uid $zzz
-echo "UID" $uid "pour" $zzz
-echo " "
-sudo chage $zzz -M 60 #changement de mot de passe user après 60 jours
-sudo mkdir /home/$zzz/Public #création du dossier Public chez les users
-sudo mkdir /home/$zzz/Privé #création du dossier Privé chez les users
-sudo mkdir /home/$zzz/Ingenierie #création du dossier Recherche chez les users
-sudo chown -R $zzz:ING /home/$zzz
-sudo chmod 1770 /home/$zzz/Ingenierie
-sudo chmod 1700 /home/$zzz/Privé
-sudo chmod 1755 /home/$zzz/Public
-sudo chmod 1755 /home/$zzz
-sudo mkdir /home/$zzz/Recherche #création du dossier Recherche chez les users
-sudo chown -R $zzz:DEV /home/$zzz
-#clear
-done
+ mdp=`< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12`
+ sudo echo User $zzz: $mdp>> MDP
+ sudo useradd -m $zzz
+ sudo echo $zzz:$mdp | chpasswd
+ sudo usermod -u $uid $zzz
+ sudo chage $zzz -M 60 #changement de mot de passe user après 60 jours
+ sudo mkdir /home/$zzz/Public #création du dossier Public chez les users
+ sudo mkdir /home/$zzz/Privé #création du dossier Privé chez les users
+ sudo mkdir /home/$zzz/Ingenierie #création du dossier Recherche chez les users
+ sudo chown -R $zzz:ING /home/$zzz
+ sudo chmod 1770 /home/$zzz/Ingenierie
+ sudo chmod 1700 /home/$zzz/Privé
+ sudo chmod 1755 /home/$zzz/Public
+ sudo chmod 1755 /home/$zzz
+ done
 
 # création user BIP avec attribution du mot de passe aléatoire + copie dans le fichier MDP + attribution des droits à /home/bip
 mdp=`< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c12`
-echo "Mot de passe" BIP = $mdp
 sudo echo User BIP: $mdp>> MDP
 sudo useradd -m BIP
-echo BIP:$mdp | chpasswd
+sudo echo BIP:$mdp | chpasswd
 sudo usermod -u 8001 BIP
-echo "UID" 8001 "pour" BIP
 sudo chage BIP -M 60 #changement de mot de passe user après 60 jours
 sudo chmod 1755 /home/BIP
 
@@ -154,3 +133,24 @@ sudo chmod 1770 /home/DEV
 sudo mkdir /home/ING
 sudo chown -R HES:ING /home/ING
 sudo chmod 1770 /home/ING
+clear
+
+#affichage des modificions :
+sudo echo "Opération terminée voici les modifications : "
+sudo echo " " 
+sudo ls -lh /home
+sudo echo " "
+sudo cat MDP
+sudo echo " "
+sudo echo "Les mots de passes sont cryptés :"
+sudo cat /etc/shadow | egrep 'ROD|SAF|ALC|JEL|SOA|NAD|LIT|KET|JAD|HES|ROM|ALD|BIP'
+sudo echo " "
+sudo echo "UID et goupes des Users :"
+for user in ROD SAF ALC JEL SOA NAD LIT KET JAD HES ROM ALD BIP
+do
+ sudo echo $user :
+ sudo id $user
+ sudo ls -lh /home/$user
+ sudo echo " "
+done
+sudo echo " "
