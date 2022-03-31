@@ -1,6 +1,6 @@
 # Linux script
 
--Ouvrir le dossier "Devoir script final", vous y trouverez les différents schémas utilisés lors de la mise en place du script au format .xmind ainsi que le fichier script.sh
+-Ouvrir le dossier "Devoir script final", vous y trouverez les différents schémas utilisés lors de la mise en place du script au format .xmind et .PDF ainsi que le fichier script.sh
 
 -Pour lancer le script :	1) ouvrez le terminal et lancer la commande $sudo bash script.sh 
 
