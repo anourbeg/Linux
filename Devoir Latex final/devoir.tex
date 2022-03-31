@@ -312,7 +312,7 @@
 		 	2) ping interface : ping ip .\\
 		 	3) default getaway : ip route show .\\
 		\section{Configuration réseau persistante}
-			• \textbf{nmcli}  : c'est le programme le plus performant et le plus courant pour faire des configuration réseau persistantes. Afin de naviguer fficacement dans nmcli il est très utile d'utiliser l'auto-completion du "bash". 2 options sont fort utilisées: Device et surtout Connection. \\
+			• \textbf{nmcli}  : c'est le programme le plus performant et le plus courant pour faire des configuration réseau persistantes. Afin de naviguer efficacement dans nmcli il est très utile d'utiliser l'auto-completion du "bash". 2 options sont fort utilisées: Device et surtout Connection. \\
 			1) "nmcli connection modify" afin de trouver la bonne interface à modifier. Il est donc possible assez facilement de s'y retrouver en utilisant l'auto-completion et en voyagant de proche en proche afin de pouvoir tout configurer.\\
 			2) "nmcli connection up [CONNECTION NAME]" afin d'activer l'interface\\
 			• /etc/hostname pour la modification du hostname \\
@@ -321,6 +321,37 @@
 		    •/etc/nsswitch.conf pour les priorité dns\\ 
 			$\Rightarrow$ ping [IP ADRESS / HOSTNAME] pour les test de connectivité à une interface \\
 			$\Rightarrow$  dig [HOSTNAME] pur vérifier les dns et la validité du hostname\\
+			
+			
+	\chapter{Faire du firewalling sous linux}
+		\section{Comprendre le Firewalling}
+			• Les Firewall sont une couche de sécurité que l'on peut installer sur des équippement réseau tels que des routeur qui permet de protéger les connexions du réseau. Sure Linux, on peut utiliser le firewall en passant via le CLI. les firewall sont gérés par Netfilter (intégré au Kernel).\\
+			$\Rightarrow$ Pour utilisr Netfilter, La commande "iptables" est utilisée cependant, la plupart des distri linux integrent une surcouche par dessus car iptables est très puissante mais pas facile d'utilisation. \\
+			$\Rightarrow$ La surcouche "Firewall-cmd" est celle présente sur Fedora entre autre et cette surcouche est celle que nous allons étudier.\\
+			
+		\section{Iptables}
+			• iptables possède une structure très précise : \\
+			\begin{flushleft}
+				\includegraphics[scale=0.6]{iptablesNotation.png}
+			\end{flushleft}
+			$\Rightarrow$ La commande iptables travaille sur les connexions entrantes (INPUT) et les connexions sortantes (OUTPUT). Il est aussi possible d'utiliser FORWARD pour les transferts de paquets sur un routeur. \\
+			
+			• Pour pouvoir bien utiliser iptables il est donc important de bien connaitre les port utilisé par les protocoles que l'ont veut filtrer. \\
+			\begin{flushleft}
+				\includegraphics[scale=0.5]{WellKnownPort.png}
+			\end{flushleft}
+			• La commande "iptables -L -v" permet d'avoir un aperçu des règles déjà en place. On peut alors commencer à mettre en place des règles à notre convenance.\\
+			\section{Firewall-cmd}
+			• La surcouche firewall-cmd permet une gestion plus facile des input et output du système\\
+			• La commande "firewll-cmd --list-all permet d'avoir un aperçu des règles déjà en place. La configuration de firewall-cmd se fait sur l'autorisation de services ( la commande "firewall-cmd --get-services" permet de connaitre tout les services utilisables sous firewall-cmd). Tout ces services possèdent un fichier de configuration disponible dans le répertoire "/usr/lib/firewalld/services".\\
+			
+			
+			
+			
+			1) Afin d'accorder la communiquation à travers le firewall il existe deux commandes : "firewall-cmd --add-service SERVICE" (version runtime) et "firewall-cmd --add-service SERVICE --permanent" (version persistante).\\
+			2) Afin de supprimer cet accès, on utilise la commande : "firewall-cmd --remove-service ssh --permanent" (version persistante) \\
+\\
+			!!!! Lors de toute modification dans les règles, il faut executer : "firewall-cmd –reload" afin de recharger le service firewalld \\
 	\chapter{Liste des commandes Linux}
 		\section{Commandes de bases sur le système de fichiers}
 			\begin{tabular}{p{3cm}|p{11cm}}

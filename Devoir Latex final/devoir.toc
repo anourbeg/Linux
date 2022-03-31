@@ -44,13 +44,17 @@
 \contentsline {chapter}{\numberline {7}Configurer les éléments réseau}{19}{}%
 \contentsline {section}{\numberline {7.1}Configuration réseau runtime}{19}{}%
 \contentsline {section}{\numberline {7.2}Configuration réseau persistante}{19}{}%
-\contentsline {chapter}{\numberline {8}Liste des commandes Linux}{21}{}%
-\contentsline {section}{\numberline {8.1}Commandes de bases sur le système de fichiers}{21}{}%
-\contentsline {section}{\numberline {8.2}Commandes de bases sur les disques}{22}{}%
-\contentsline {section}{\numberline {8.3}Commandes de bases sur les textes}{22}{}%
-\contentsline {section}{\numberline {8.4}Commandes de bases pour gérer les utilisateurs}{23}{}%
-\contentsline {section}{\numberline {8.5}Le fonctionnement des utilisateurs et groupes sur Linux}{23}{}%
-\contentsline {section}{\numberline {8.6}Commandes de bases sur les processus}{24}{}%
-\contentsline {section}{\numberline {8.7}Commandes de bases réseaux}{24}{}%
-\contentsline {section}{\numberline {8.8}Les commandes réseau utiles de Linux}{24}{}%
-\contentsline {section}{\numberline {8.9}tar, gzip, bzip, rar, ZIP, 7zip – La compression/décompression de fichiers sur Linux}{25}{}%
+\contentsline {chapter}{\numberline {8}Faire du firewalling sous linux}{21}{}%
+\contentsline {section}{\numberline {8.1}Comprendre le Firewalling}{21}{}%
+\contentsline {section}{\numberline {8.2}Iptables}{21}{}%
+\contentsline {section}{\numberline {8.3}Firewall-cmd}{22}{}%
+\contentsline {chapter}{\numberline {9}Liste des commandes Linux}{23}{}%
+\contentsline {section}{\numberline {9.1}Commandes de bases sur le système de fichiers}{23}{}%
+\contentsline {section}{\numberline {9.2}Commandes de bases sur les disques}{24}{}%
+\contentsline {section}{\numberline {9.3}Commandes de bases sur les textes}{24}{}%
+\contentsline {section}{\numberline {9.4}Commandes de bases pour gérer les utilisateurs}{25}{}%
+\contentsline {section}{\numberline {9.5}Le fonctionnement des utilisateurs et groupes sur Linux}{25}{}%
+\contentsline {section}{\numberline {9.6}Commandes de bases sur les processus}{26}{}%
+\contentsline {section}{\numberline {9.7}Commandes de bases réseaux}{26}{}%
+\contentsline {section}{\numberline {9.8}Les commandes réseau utiles de Linux}{26}{}%
+\contentsline {section}{\numberline {9.9}tar, gzip, bzip, rar, ZIP, 7zip – La compression/décompression de fichiers sur Linux}{27}{}%
