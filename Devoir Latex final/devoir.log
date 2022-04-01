@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.24)  30 MAR 2022 07:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.24)  1 APR 2022 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (devoir.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
 File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -24,33 +24,39 @@ File: bk11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.
+sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.s
+ty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.
+sty
 Package: babel 2022/02/26 3.73 The Babel package
 \babel@savecnt=\count194
 \U@D=\dimen139
 \l@unhyphenated=\language79
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbab
+el.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count195
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.
+cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
-df
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/babel-french
+\french.ldf
 Language: french 2021/07/20 v3.5m French support from the babel system
 Package babel Info: Hyphen rules for 'acadian' set to \l@french
 (babel)             (\language22). Reported on input line 91.
@@ -77,8 +83,8 @@ Package babel Info: Making ? an active character on input line 433.
 \parindentFFN=\dimen146
 \FBfnindent=\dimen147
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\francais
-.ldf
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/babel-french
+\francais.ldf
 Language: francais 2021/07/20 v3.5m French support from the babel system
 
 
@@ -87,73 +93,94 @@ Package francais.ldf Warning: Option `francais' for Babel is *deprecated*,
 (francais.ldf)                use `french' instead; reported on input line 31.
 
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.l
-df
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/babel-french
+\french.ldf
 Language: french 2021/07/20 v3.5m French support from the babel system
 )))
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scale
+fnt.sty)
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyva
+l.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
+icx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
+ics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.
+sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\g
+raphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\p
+dftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
-) (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\charter.sty
+)
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\charter
+.sty
 Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
-) (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+)
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color
+.sty
 Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\c
+olor.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
-) (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+)
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multi
+row.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip49
 \multirow@cntb=\count269
 \multirow@dima=\skip50
 \bigstrutjot=\dimen150
-) (C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+)
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parski
+p.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvop
+tions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxc
+mds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
-ty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kv
+setkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etool
+box.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count270
 ))
 LaTeX Font Info:    Trying to load font information for T1+bch on input line 11
 .
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.fd
+
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.f
+d
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3ba
+ckend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count271
 \l__pdf_internal_box=\box50
@@ -177,8 +204,8 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Info: Redefining \degres on input line 11.
 LaTeX Info: Redefining \up on input line 11.
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\su
+pp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count272
 \scratchdimen=\dimen151
@@ -192,14 +219,14 @@ ii
 \makeMPintoPDFobject=\count277
 \everyMPtoPDFconversion=\toks21
 )
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\e
+pstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epsto
+pdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 <linux.jpg, id=1, 506.89375pt x 250.9375pt>
@@ -215,8 +242,8 @@ Package pdftex.def Info: latex.jpg  used on input line 23.
  [1
 
 
-{C:/Users/ambro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./linux.jpg>
- <./latex.jpg>] (devoir.toc
+{C:/Users/Administrateur/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./l
+inux.jpg> <./latex.jpg>] (devoir.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -233,7 +260,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for TS1+bch on input line 3
 3.
-(C:\Users\ambro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
+
+(C:\Users\Administrateur\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.
+fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 33--41
@@ -654,20 +683,21 @@ Overfull \hbox (62.33856pt too wide) in paragraph at lines 479--490
 [26] [27] (devoir.aux) ) 
 Here is how much of TeX's memory you used:
  4350 strings out of 478582
- 71762 string characters out of 2844344
+ 72366 string characters out of 2840096
  388760 words of memory out of 3000000
  22472 multiletter control sequences out of 15000+600000
  513448 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,62p,503b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/enc
-/dvips/base/8r.enc}<C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/type1/bi
-tstrea/charter/bchb8a.pfb><C:/Users/ambro/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/bitstrea/charter/bchbi8a.pfb><C:/Users/ambro/AppData/Local/Programs/MiKTeX
-/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/ambro/AppData/Local/Programs
-/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/ambro/AppData/Local/P
-rograms/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/ambro/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+{C:/Users/Administrateur/AppData/Local/Programs/MiKTeX/
+fonts/enc/dvips/base/8r.enc}<C:/Users/Administrateur/AppData/Local/Programs/MiK
+TeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/Administrateur/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/Administ
+rateur/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C
+:/Users/Administrateur/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/chart
+er/bchr8a.pfb><C:/Users/Administrateur/AppData/Local/Programs/MiKTeX/fonts/type
+1/bitstrea/charter/bchri8a.pfb><C:/Users/Administrateur/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on devoir.pdf (30 pages, 750537 bytes).
 PDF statistics:
  150 PDF objects out of 1000 (max. 8388607)
